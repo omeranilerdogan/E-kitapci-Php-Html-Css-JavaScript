@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" href="html.css" />
+    
+  </head>
+  <body>
+    <nav class="navbar">
+        <h2 class="title">Kitapçı</h2>
+        <ul class="menu">
+          <li class="active" id="kitap">Kitaplar</li>
+          <li>Sesli kitaplar</li>
+          <li>Hediyeler</li>
+          <li href="#" id="Hak">Hakkımızda</li>
+          <li>İletişim</li>
+        </ul>
+        <ul class="menu_icons">
+          <li> <i class="bi bi-person"></i></li> 
+          <li> <i class="bi bi-search"></i></li> 
+          <li class="basket_icon" onclick="toggleModal()">
+             <i class="bi bi-cart"></i>
+            <span class="basket_count"></span>
+            </li> 
+        </ul>
+      </nav>
+      <div class="sepet_modal">
+        <div class="sepet_items">
+          <i class="bi bi-x" onclick="toggleModal()"></i>
+          <h2 class="basket_title">Sepetin</h2>
+          <ul class="sepet_liste">
+            <li class="basket_item">
+              <p class="ort">Sepetiniz Şuan Boş </p>
+            
+            </li>
+  
+          </ul>
+          <div class="basket_total">
+            <span class="fw-bold mb-3 fs-5 total_price"></span><br>
+            <button class="btn_purple" id="git">Ödemeye Geç</button>
+          </div>
+        </div>
+      </div>
+    
+    <div id="content" class="row">
+        <div class="inner">
+            
+            <div id="mainColumn" class="fl col-12">
+                <!--NOCACHE_EXPIRED--><div class="col col-12">
+
+</div>
+<div id="pageScripts">
+<script type="text/javascript">
+window.gMapsCallback = function(){
+$(window).trigger('gMapsLoaded');
+var Latlng = new google.maps.LatLng(40.22188623661761, 28.91382493078709);
+var mapOptions = {
+center: Latlng,
+zoom: 16,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+var infowindow = new google.maps.InfoWindow({
+content: "<p><strong>B.K.M Yazılı Basım Yay. Kırt. Gıda. San. Tic. Ltd. Şti.<br /></strong></p><hr /><table style='width: 274px; border-collapse: collapse; height: 61px;' cellspacing='0' cellpadding='2' bordercolor='#111111' border='0'><tbody><tr><td height='17' align='left'><strong>Adres:</strong></td><td align='left'></td></tr><tr><td align='left'><strong>Tel:</strong></td><td align='left'>0850 255 0 256</td></tr><tr><td align='left'><strong></strong></td><td align='left'></td></tr><tr><td width='66' align='left'><strong>E-Posta:</strong></td><td align='left'><a style='text-decoration: none;' href='mailto:info@pctech.com'><span style='color: #800000;'>info@bkmkitap.com</span></a></td></tr></tbody></table><p></p>"
+});
+marker = new google.maps.Marker({
+position: Latlng,
+map: map,
+title: ""
+});
+google.maps.event.addListener(marker, 'click', function(){
+infowindow.open(map, marker);
+});
+}
+</script>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQKdosFZT822kKi1W8NzMVl6gFr8DZFAg&amp;sensor=true&amp;callback=gMapsCallback" type="text/javascript" charset="utf-8"></script><!--NOCACHE_EXPIRED--><p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> Firma Adı: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">Kitapçı KİTAP KIRTASİYE SANAYİ VE TİCARET LİMİTED ŞİRKETİ</span> </span></p>
+<p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> Tescilli Markası: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">Kitapçı</span> </span></p>
+<p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> Telefon: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">0850 355 0 256</span> </span></p>
+<p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> Firma Adresi: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">Yeni Mh. Menderes Cd. No:323/C Çayırova/kocaeli</span> </span></p>
+<p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> E-posta: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">info@Kitapçı.com</span> </span></p>
+<p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> Mersis No: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">0127012085800037</span> </span></p>
+<p class="col col-12"><span class="row"> <span class="fl col-5 col-md-3 col-sm-12 text-semibold"> Kep adresi: <span class="col fr forDesktop">:</span> </span> <span class="col col-7 col-md-9 col-sm-12 p-left">Kitapçı@hs01.kep.tr</span> </span></p>
+<script type="text/javascript" src="/theme/standart/js/jquery.form.js"></script>
+<script type="text/javascript" src="/theme/standart/js/flag-v4-new.js"></script>
+
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="container my-5">
+
+        <!-- Footer -->
+      <footer class="bg-gray text-center text-gray">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Form -->
+          <section class="">
+            <form action="">
+             
+              <div class="row d-flex justify-content-center">
+               
+                <div class="col-auto">
+                  <p class="pt-2 text-black">
+                    <strong>Sitemize Kaydolun</strong>
+                  </p>
+                </div>
+               
+                <div class="col-md-5 col-12 text-black">
+                  
+                  <div class="form-outline form-dark mb-4">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">E-Posta Adresiniz</label>
+                  </div>
+                </div>
+               
+                <div class="col-auto">
+                  
+                  <button type="submit" class="btn btn-outline-light mb-4 text-black bg-gray ">
+                    Abone Ol
+                  </button>
+                </div>
+               
+              </div>
+             
+            </form>
+          </section>
+        
+          <section class="mb-4 text-black">
+            <p>
+              Okumak benim tutkum diyorsanız, aradığınız her kitabı Kitapçı.com'da ve mağazalarımızda bulabilirsiniz. 
+              Farklı türlerde yüzbinlerce kitapla birlikte en çok satanlar listesinde yer alanlar ve yeni çıkan kitapların hepsi burada.
+              Siz sadece ne okumak istediğinize karar verin!
+            </p>
+          </section>
+        
+          <section class="">
+           
+            <div class="row">
+              
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-black">KATEGORİLER</h5>
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-dark">Tarih Kitapları</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Hazırlık Kitapları</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Çocuk Kitapları</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Kırtasiye</a>
+                  </li>
+                </ul>
+              </div>
+             
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-dark">ÖNEMLİ BİLGİLER</h5>
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="hakkımızda.html " class="text-black">Hakkımızda</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Teslimat Koşulları</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Kişisel Verilerin Korunması</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Satış Sözleşmesi</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Garanti ve İade Koşulları</a>
+                  </li>
+                </ul>
+              </div>
+            
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-black">HIZLI ERİŞİM</h5>
+      
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="sorular.html" class="text-dark">Sık Sorulan Sorular</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Mağzalarımız</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Yeni çıkan Kitaplar</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-dark">Çok Satan kitaplar</a>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+       
+          </section>
+         
+        </div>
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="index.html">Kitapçı.com</a>
+        </div>
+        
+      </footer>
+      
+        
+      </div>
+    <script
+type="text/javascript"
+src="assets/bootstrap/js/bootstrap.min.js"
+></script>
+<script type="text/javascript" src="app.js"></script>
+    <script>
+      document.querySelector("#git").onclick=function(){
+        window.location.href="ödeme.html";
+      }
+    </script>
+    <script>
+      document.querySelector("#Hak").onclick=function(){
+        window.location.href="hakkımızda.html";
+      }
+    </script>
+     <script>
+      document.querySelector("#kitap").onclick=function(){
+        window.location.href="index.html";
+      }
+    </script>
+  </body>
+</html>

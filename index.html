@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitap Mektebi | Kitap Mağazası</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" href="html.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="title" href="index.html">Kitapçı</h2>
+      <ul class="menu">
+        <li class="active" id="kitap">Kitaplar</li>
+        <li>Sesli kitaplar</li>
+        <li>Hediyeler</li>
+        <li href="#"id="Hak">Hakkımızda</li>
+        <li id="ilet">İletişim</li>
+      </ul>
+      <ul class="menu_icons">
+        <li> <i class="bi bi-person"></i></li> 
+        <li> <i class="bi bi-search"></i></li> 
+        <li class="basket_icon" onclick="toggleModal()">
+           <i class="bi bi-cart"></i>
+          <span class="basket_count"></span>
+          </li> 
+      </ul>
+    </nav>
+    <section class="slider">
+      <div id="carouselbookslider" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/slide1.png" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slide6.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselbookslider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselbookslider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="store my-5">
+      <div class="filter_backround">
+        
+      </div>
+      <ul class="filter">
+        <li class="active">TÜMÜ</li>
+        <li>ROMAN</li>
+        <li>KİŞİSEL GELİŞİM</li>
+        <li>ŞİİR KİTAPLARI</li>
+        <li>ANI KİTAPLARI</li>
+        <li>HİKAYELER</li>
+
+      </ul>
+      <div class="row book_list">
+       
+      </div>
+
+    </section>
+    <div class="sepet_modal">
+      <div class="sepet_items">
+        <i class="bi bi-x" onclick="toggleModal()"></i>
+        <h2 class="basket_title">Sepetin</h2>
+        <ul class="sepet_liste">
+          <li class="basket_item">
+            <p class="ort">Sepetiniz Şuan Boş </p>
+          
+          </li>
+
+        </ul>
+        <div class="basket_total">
+          <span class="fw-bold mb-3 fs-5 total_price"></span><br>
+          <button class="btn_purple" id="git">Ödemeye Geç</button>
+        </div>
+      </div>
+    </div>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+  <!-- Footer -->
+<footer class="bg-gray text-center text-gray">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+       
+        <div class="row d-flex justify-content-center">
+         
+          <div class="col-auto">
+            <p class="pt-2 text-black">
+              <strong>Sitemize Kaydolun</strong>
+            </p>
+          </div>
+         
+          <div class="col-md-5 col-12 text-black">
+            
+            <div class="form-outline form-dark mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">E-Posta Adresiniz</label>
+            </div>
+          </div>
+         
+          <div class="col-auto">
+            
+            <button type="submit" class="btn btn-outline-light mb-4 text-black bg-gray ">
+              Abone Ol
+            </button>
+          </div>
+         
+        </div>
+       
+      </form>
+    </section>
+  
+    <section class="mb-4 text-black">
+      <p>
+        Okumak benim tutkum diyorsanız, aradığınız her kitabı Kitapçı.com'da ve mağazalarımızda bulabilirsiniz. 
+        Farklı türlerde yüzbinlerce kitapla birlikte en çok satanlar listesinde yer alanlar ve yeni çıkan kitapların hepsi burada.
+        Siz sadece ne okumak istediğinize karar verin!
+      </p>
+    </section>
+  
+    <section class="">
+     
+      <div class="row">
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-black">KATEGORİLER</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Tarih Kitapları</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Hazırlık Kitapları</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Çocuk Kitapları</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Kırtasiye</a>
+            </li>
+          </ul>
+        </div>
+       
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-dark">ÖNEMLİ BİLGİLER</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="hakkımızda.html " class="text-black">Hakkımızda</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Teslimat Koşulları</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Kişisel Verilerin Korunması</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Satış Sözleşmesi</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Garanti ve İade Koşulları</a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-black">HIZLI ERİŞİM</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="sorular.html" class="text-dark">Sık Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Mağzalarımız</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Yeni çıkan Kitaplar</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Çok Satan kitaplar</a>
+            </li>
+          </ul>
+        </div>
+       
+      </div>
+ 
+    </section>
+   
+  </div>
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-dark" href="index.html">Kitapçı.com</a>
+  </div>
+  
+</footer>
+
+  
+</div>
+
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+   
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+      document.querySelector("#git").onclick=function(){
+        window.location.href="ödeme.html";
+      }
+    </script>
+    <script>
+      document.querySelector("#Hak").onclick=function(){
+        window.location.href="hakkımızda.html";
+      }
+    </script>
+     <script>
+      document.querySelector("#kitap").onclick=function(){
+        window.location.href="index.html";
+      }
+    </script>
+      <script>
+        document.querySelector("#ilet").onclick=function(){
+          window.location.href="iletişim.html";
+        }
+      </script>
+    
+  </body>
+</html>

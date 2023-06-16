@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" href="html.css" />
+   
+  </head>
+  <body>
+    <nav class="navbar">
+        <h2 class="title">Kitapçı</h2>
+        <ul class="menu">
+          <li class="active" id="kitap">Kitaplar</li>
+          <li>Sesli kitaplar</li>
+          <li>Hediyeler</li>
+          <li href="hakkımızda.html">Hakkımızda</li>
+          <li id="ilet">İletişim</li>
+        </ul>
+        <ul class="menu_icons">
+          <li> <i class="bi bi-person"></i></li> 
+          <li> <i class="bi bi-search"></i></li> 
+          <li class="basket_icon" onclick="toggleModal()">
+             <i class="bi bi-cart"></i>
+            <span class="basket_count"></span>
+            </li> 
+        </ul>
+      </nav>
+      <div class="sepet_modal">
+        <div class="sepet_items">
+          <i class="bi bi-x" onclick="toggleModal()"></i>
+          <h2 class="basket_title">Sepetin</h2>
+          <ul class="sepet_liste">
+            <li class="basket_item">
+              <p class="ort">Sepetiniz Şuan Boş </p>
+            
+            </li>
+  
+          </ul>
+          <div class="basket_total">
+            <span class="fw-bold mb-3 fs-5 total_price"></span><br>
+            <button class="btn_purple" id="git">Ödemeye Geç</button>
+          </div>
+        </div>
+      </div>
+    <div class="box col-12">
+        <div class="row text-description">
+        <h1 style="text-align: center;">Hakkımızda</h1>
+        &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 10pt;">Bizimki kitaba olan tutkulu bir yolculuk, bizimki 1 ay önce başlayan okuma ve okurlara en güzel kitapları ulaştırma heyecanı, bizimki her ulaştırdığımız kitapta bir aydınlanma yolculuğuna sebep olma mutluluğu! Kitaplar bize 1 ay önce mutluluk verdi, biz de mutluluğumuzu daha çok kitapseverle paylaşmak için yeni kitabevleri açtık, Avrupa'nın en büyük kitabevinde milyonlarca kitapseveri ağırladık. Sonrasında da 2023 yılından itibaren web sitemiz üzerinden ülkemizin her köşesindeki kitapseverlere kitap göndermeye başladık. Bugüne dek on milyonlarca kitabı milyonlarca kitapsevere ulaştırmanın mutluluğunu yaşıyor, KİTAPÇI ailesi olarak sizlere daha iyi hizmet verebilmek için her gün samimiyetle çalışıyoruz. Keyifli okumalar dileriz.</span>
+        <h2 style="text-align: center;">Vizyon</h2>
+        <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 10pt;">Kitapları ekonomik ve hızlı bir şekilde sunan, kaliteli müşteri hizmetleri ile kitapseverleri mutlu eden, ülkemizin aydınlanmasına katkı yapan, sektörün lider markası olmak.</span> <br>
+        <h2 style="text-align: center;">Misyon</h2>
+        <span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 10pt;">Kitapları ekonomik fiyatla, hızlı gönderiyle ve kaliteli müşteri iletişimiyle sunarak yediden yetmişe tüm kitapseverleri mutlu etmek, kitap okumanın yaygınlaşmasına öncülük ederek ülkemizin kültürel gelişimine destek vermek.</span><br>
+        <h2 style="text-align: center;"><br>Değerler</h2>
+        <h3 style="text-align: center;">Kitapseverlerin Memnuniyeti</h3>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Kitapseverler yaşam sebebimizdir, onlarla dünyanın daha güzel bir yer olacağına inanıyoruz.</span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Kitapseverlere kaliteli hizmet sunmak temel şirket felsefemizdir. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Markamızın geçmişinden bugüne oluşturduğumuz güven en önemli sermayemizdir. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">İşlerimizi ilk günkü esnaf samimiyeti ile gönülden sürdürmeye gayret ediyoruz. </span></div>
+        <h3 style="text-align: center;">Sevgi, Saygı ve Paylaşım</h3>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Kitap sevgisi bizi var eden temel anlayışımızdır. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Yüzyıllardır kitaplarla taşınan bilgiye ve bilime gönülden saygılıyız. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Çalışanlarımızı önemseriz, onları saygın birer bilgi elçisi olarak görürüz. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Farklılıklara saygı duyarız ve gelişim için farklı görüşleri yaşatmaya çalışırız.</span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Marka ve çalışanları olarak mütevazi davranışları benimseriz. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Doğa ve hayvan sevgisi ile geleceğin daha güzel olacağına inanırız. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Yardımseverliğe inanıyor, ihtiyacı olanlara kitap göndermek idealine gönülden destek veriyoruz. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Ülkemizi çok seviyor, ülkemizin kültürel gelişimine katkı için idealistçe çalışıyoruz.</span></div>
+        <h3 style="text-align: center;">Mükemmel Hizmet Sunumu</h3>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Operasyonel olarak mükemmel bir hizmet sunmaya azami çaba gösteririz. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Verimliliği esas alırız, verimli olmayan tüm süreçleri elimine ederiz. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Sonuç odaklı çalışma tarzını benimser, işlerimizi bu ilkeye göre planlarız. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Doğru sonuçlara ulaşmak için yalınlık ilkesine inanırız. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Yenilikçilik gelişimimizin ana kaynağıdır. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Ekip çalışmasına önem veririz, kendini ve ekibini sürekli geliştiren çalışanlarımızla yarınlara ilerleriz. </span></div>
+        <div style="text-align: center;"><span style="font-size: 10pt;">Sektörümüze öncülük ederek kitapların yaygın okunmasını hedefleriz.</span></div>
+        </div>
+        </div>
+      
+        <div class="container my-5">
+
+            <!-- Footer -->
+          <footer class="bg-gray text-center text-gray">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!-- Section: Form -->
+              <section class="">
+                <form action="">
+                 
+                  <div class="row d-flex justify-content-center">
+                   
+                    <div class="col-auto">
+                      <p class="pt-2 text-black">
+                        <strong>Sitemize Kaydolun</strong>
+                      </p>
+                    </div>
+                   
+                    <div class="col-md-5 col-12 text-black">
+                      
+                      <div class="form-outline form-dark mb-4">
+                        <input type="email" id="form5Example2" class="form-control" />
+                        <label class="form-label" for="form5Example2">E-Posta Adresiniz</label>
+                      </div>
+                    </div>
+                   
+                    <div class="col-auto">
+                      
+                      <button type="submit" class="btn btn-outline-light mb-4 text-black bg-gray ">
+                        Abone Ol
+                      </button>
+                    </div>
+                   
+                  </div>
+                 
+                </form>
+              </section>
+            
+              <section class="mb-4 text-black">
+                <p>
+                  Okumak benim tutkum diyorsanız, aradığınız her kitabı Kitapçı.com'da ve mağazalarımızda bulabilirsiniz. 
+                  Farklı türlerde yüzbinlerce kitapla birlikte en çok satanlar listesinde yer alanlar ve yeni çıkan kitapların hepsi burada.
+                  Siz sadece ne okumak istediğinize karar verin!
+                </p>
+              </section>
+            
+              <section class="">
+               
+                <div class="row">
+                  
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-black">KATEGORİLER</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-dark">Tarih Kitapları</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Hazırlık Kitapları</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Çocuk Kitapları</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Kırtasiye</a>
+                      </li>
+                    </ul>
+                  </div>
+                 
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-dark">ÖNEMLİ BİLGİLER</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="hakkımızda.html " class="text-black">Hakkımızda</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Teslimat Koşulları</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Kişisel Verilerin Korunması</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Satış Sözleşmesi</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Garanti ve İade Koşulları</a>
+                      </li>
+                    </ul>
+                  </div>
+                
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase text-black">HIZLI ERİŞİM</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="sorular.html" class="text-dark">Sık Sorulan Sorular</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Mağzalarımız</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Yeni çıkan Kitaplar</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-dark">Çok Satan kitaplar</a>
+                      </li>
+                    </ul>
+                  </div>
+                 
+                </div>
+           
+              </section>
+             
+            </div>
+            
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2023 Copyright:
+              <a class="text-dark" href="index.html">Kitapçı.com</a>
+            </div>
+            
+          </footer>
+          
+            
+          </div>
+<script
+type="text/javascript"
+src="assets/bootstrap/js/bootstrap.min.js"
+></script>
+<script type="text/javascript" src="app.js"></script>
+    <script>
+      document.querySelector("#git").onclick=function(){
+        window.location.href="ödeme.html";
+      }
+    </script>
+    <script>
+      document.querySelector("#Hak").onclick=function(){
+        window.location.href="hakkımızda.html";
+      }
+    </script>
+     <script>
+      document.querySelector("#kitap").onclick=function(){
+        window.location.href="index.html";
+      }
+    </script>
+        <script>
+            document.querySelector("#ilet").onclick=function(){
+              window.location.href="iletişim.html";
+            }
+          </script>
+  </body>
+  
+</html>

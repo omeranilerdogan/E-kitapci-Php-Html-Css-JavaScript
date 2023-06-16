@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #1c2a39;
+  --gray: #5c6a79;
+  --purple: #4c3db2;
+ 
+}
+.navbar{
+  height: 120px;
+  width: 80%;
+  margin-left: 10%;
+}
+.title{
+    font-weight: bold;
+}
+.menu, .menu_icons{
+list-style-type: none;
+display: flex;
+flex-direction: row;
+font-size: 20px;
+color: var(--gray);
+cursor: pointer;
+}
+
+.menu .active{
+    color: var(--black);
+    font-weight: bold;
+}
+.menu li, .menu_icons li{
+    margin: 0 10px;
+}
+.menu_icons li{
+    color: var(--black);
+}
+.basket_icon{
+    position: relative;
+}
+.basket_count{
+    position: absolute;
+    right: -0.7;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    background-color:var(--black);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+
+    
+}
+.basket_count:empty{
+   opacity: 0;
+}
+
+
+.slider{
+    width: 80%;
+    margin: auto;
+    height: 600px;
+}
+.slider img{
+    height: 600px;
+}
+.store{
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+  
+}
+.book_card{
+    height:400px;
+}
+.book_card img{
+    height: 400px;
+}
+.fos{       
+font-family: "Opem Sans",sans-serif;
+}
+.gray{
+    color: var(--gray);
+}
+.black{
+    color: var(--black);
+}
+.fw-bold{
+    font-weight: bold;
+}               
+.book_star-rate .bi-star,.bi-star-fill{
+    color: #eeedf5;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.book_star-rate .bi-star-fill.active{
+color: #f2c92c;
+}
+.book_rewies{
+    color: var(--gray);
+}
+.book_desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.old_price{
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
+.btn_purple{
+    cursor: pointer;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    transition: all 250ms ease-in-out;
+   
+}
+.btn_purple:hover{
+    background-color: var(--purple);
+    color: white ;
+}
+.filter_backround{
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 700px;
+    background-color: #efeef6;
+    
+}
+.filter{
+    position: absolute;
+    list-style-type: none;
+   display: flex;
+   flex-direction: column  ;
+   min-height: 650px;
+   justify-content: center;
+}
+.filter li{
+    color: var(--gray);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    
+}
+.filter li :hover{
+    color: red ;
+}
+.filter li.active{
+    color: var(--purple);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.filter li.active::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--black);
+    position: absolute;
+    left: -1px;
+    margin-top: 12px;
+}
+.sepet_modal{
+    position: fixed;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background-color: #5c6a7950;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition:all 250ms ease-in-out;
+}
+.sepet_modal.active{
+    opacity: 1;
+   z-index: 1000;
+    
+}
+
+.sepet_items{
+    position: relative;
+    width: 0px;
+    background-color: white;
+    height: 100%;
+    float: right;
+    transition:all 250ms ease-in-out;
+}
+.sepet_modal.active .sepet_items{
+     width: 450px;
+}
+
+.sepet_items .bi-x{
+   position: absolute;
+   left: 0;
+   top: 0;
+   font-size: 3rem;
+   color: var(--black);
+   cursor: pointer;
+}
+.basket_title{
+    color: var(--black);
+    margin-top: 5rem ;
+    text-align: center;
+    font-weight: bold;
+}
+.sepet_liste{
+    list-style-type: none;
+    padding: 0 5px;
+    margin-top: 3rem;
+    max-height: 650px;
+    overflow-y: auto;
+}
+.basket_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.basket_items-info{
+    width: 250px;
+}
+
+.basket_items-info .book_name{
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+.basket_items-info .book_price{
+    font-size: 16px;
+   
+   
+}
+.basket_items-info .book_remove{
+  cursor: pointer;
+color: var(--gray);   
+   
+}
+
+.basket_item .book_count{
+    
+     font-size: 1.17rem;
+     font-weight: bold;
+     color: var(--black);
+  }
+  .book_count .increase, .decrease{
+    cursor: pointer;
+    color: var(--purple);
+
+  } 
+  .basket_total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+    width: inherit;
+    
+  }
+  .basket_total .btn_purple{
+    width: 100%;
+  }
+  .ort{
+    margin: auto;
+    font-style: italic;
+    font-weight:bold;
+  }
+ 
